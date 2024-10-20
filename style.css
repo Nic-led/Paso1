@@ -1,0 +1,115 @@
+* margin {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(IMAGEN/mezcla-col.png) ;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    height: 48px;
+    background-color: #FFD0D0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 24px;
+    color: rgb(85, 22, 22);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: sticky;
+    top:0px;
+}
+
+header>img {
+    height: 100px;
+}
+
+nav{
+    height: 48px;
+    background-color: #FFE3E3;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+} 
+
+main {
+    flex: 1;
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 200px;
+    color:#4e1515;
+    background-color: #e9b7b7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+aside li{
+   list-style: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align:left;
+}
+section {
+    flex:1;
+    padding: 24px;
+}
+
+section table {
+    width: 100%;
+    background-color: #bedce6;
+    border-collapse: collapse;
+}
+
+section th, section td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #f18484;
+    color:white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#camera  {
+    border: 2px solid white;
+    background-color:#f18484;
+    height: 64px;
+    width: 64px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    position: fixed;
+    right: 24px;
+    bottom: 64px;
+}
+
+#camera > img{
+   height: 100%;
+}
